@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>TestNG:  FirefoxTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FirefoxTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 15 15:04:18 SGT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>2809 seconds (2809175 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='remedy.health.SharedControls.TestSharedControls()'><b>TestSharedControls</b><br>Test class: remedy.health.SharedControls</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.heliumhq.API$GUIElement$1@75a0c890 (tried for 50 second(s) with 1 MILLISECONDS interval)
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-IQOQ25D&apos;, ip: &apos;192.168.140.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4388_16378}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3f327c4b5a1170598e6c6e158ab7b0df
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
+	at com.heliumhq.api_impl.APIImpl.waitUntilImpl(APIImpl.java:997)
+	at com.heliumhq.api_impl.APIImpl.waitUntilImpl(APIImpl.java:987)
+	at com.heliumhq.API.waitUntil(API.java:701)
+	at remedy.health.RemedySharedFunctions.verifyElements(RemedySharedFunctions.java:116)
+	at remedy.health.RemedySharedFunctions.SharingControls(RemedySharedFunctions.java:312)
+	at remedy.health.SharedControls.CheckSharingControls(SharedControls.java:14)
+	at remedy.health.SharedControls.TestSharedControls(SharedControls.java:9)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace177657196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace177657196'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.heliumhq.API$GUIElement$1@75a0c890 (tried for 50 second(s) with 1 MILLISECONDS interval)
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-IQOQ25D&apos;, ip: &apos;192.168.140.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir4388_16378}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3f327c4b5a1170598e6c6e158ab7b0df
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
+	at com.heliumhq.api_impl.APIImpl.waitUntilImpl(APIImpl.java:997)
+	at com.heliumhq.api_impl.APIImpl.waitUntilImpl(APIImpl.java:987)
+	at com.heliumhq.API.waitUntil(API.java:701)
+	at remedy.health.RemedySharedFunctions.verifyElements(RemedySharedFunctions.java:116)
+	at remedy.health.RemedySharedFunctions.SharingControls(RemedySharedFunctions.java:312)
+	at remedy.health.SharedControls.CheckSharingControls(SharedControls.java:14)
+	at remedy.health.SharedControls.TestSharedControls(SharedControls.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>243</td>
+<td>remedy.health.SharedControls@2f686d1f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='remedy.health.AboutUs.CheckAboutUs()'><b>CheckAboutUs</b><br>Test class: remedy.health.AboutUs</td>
+<td></td>
+<td>35</td>
+<td>remedy.health.AboutUs@59ec2012</td></tr>
+<tr>
+<td title='remedy.health.ArticlePage.CheckArticles()'><b>CheckArticles</b><br>Test class: remedy.health.ArticlePage</td>
+<td></td>
+<td>40</td>
+<td>remedy.health.ArticlePage@589838eb</td></tr>
+<tr>
+<td title='remedy.health.Bookstore.CheckBookstore()'><b>CheckBookstore</b><br>Test class: remedy.health.Bookstore</td>
+<td></td>
+<td>261</td>
+<td>remedy.health.Bookstore@73ad2d6</td></tr>
+<tr>
+<td title='remedy.health.MainPage.CheckMainPage()'><b>CheckMainPage</b><br>Test class: remedy.health.MainPage</td>
+<td></td>
+<td>2</td>
+<td>remedy.health.MainPage@42dafa95</td></tr>
+<tr>
+<td title='remedy.health.DrugsandSupplements.TestDrugsandSpplements()'><b>TestDrugsandSpplements</b><br>Test class: remedy.health.DrugsandSupplements</td>
+<td></td>
+<td>598</td>
+<td>remedy.health.DrugsandSupplements@4cf777e8</td></tr>
+<tr>
+<td title='remedy.health.FoodandFitness.TestFoodandFitness()'><b>TestFoodandFitness</b><br>Test class: remedy.health.FoodandFitness</td>
+<td></td>
+<td>802</td>
+<td>remedy.health.FoodandFitness@7085bdee</td></tr>
+<tr>
+<td title='remedy.health.HealthCareandCosts.TestHealthCareandCosts()'><b>TestHealthCareandCosts</b><br>Test class: remedy.health.HealthCareandCosts</td>
+<td></td>
+<td>330</td>
+<td>remedy.health.HealthCareandCosts@6500df86</td></tr>
+<tr>
+<td title='remedy.health.SearchEngineOptimization.TestSearchEngine()'><b>TestSearchEngine</b><br>Test class: remedy.health.SearchEngineOptimization</td>
+<td></td>
+<td>4</td>
+<td>remedy.health.SearchEngineOptimization@3fee9989</td></tr>
+<tr>
+<td title='remedy.health.SexandRelationships.TestSexandRelationships()'><b>TestSexandRelationships</b><br>Test class: remedy.health.SexandRelationships</td>
+<td></td>
+<td>259</td>
+<td>remedy.health.SexandRelationships@402a079c</td></tr>
+</table><p>
+</body>
+</html>

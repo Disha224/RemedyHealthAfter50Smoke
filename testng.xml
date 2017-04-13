@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="remedy.health.ArticlePage"/>
+      <class name="remedy.health.Tag"/>
+      <class name="remedy.health.MainPage"/>
+      <class name="remedy.health.HealthCareandCosts"/>
+      <class name="remedy.health.SexandRelationships"/>
+      <class name="remedy.health.AboutUs"/>
+      <class name="remedy.health.DrugsandSupplements"/>
+      <class name="remedy.health.Author"/>
+      <class name="remedy.health.SharedControls"/>
+      <class name="remedy.health.SearchEngineOptimization"/>
+      <class name="remedy.health.Bookstore"/>
+      <class name="remedy.health.FoodandFitness"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

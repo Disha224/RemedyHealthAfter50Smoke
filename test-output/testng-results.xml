@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39352" started-at="2017-04-12T09:06:14Z" finished-at="2017-04-12T09:06:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39352" started-at="2017-04-12T09:06:14Z" finished-at="2017-04-12T09:06:53Z">
+      <class name="remedy.health.HealthCareandCosts">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:remedy.health.HealthCareandCosts@77cd7a0]" name="LaunchBrowser" is-config="true" duration-ms="12802" started-at="2017-04-12T15:06:14Z" finished-at="2017-04-12T15:06:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="TestHealthCareandCosts()[pri:0, instance:remedy.health.HealthCareandCosts@77cd7a0]" name="TestHealthCareandCosts" duration-ms="24217" started-at="2017-04-12T15:06:27Z" finished-at="2017-04-12T15:06:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHealthCareandCosts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:remedy.health.HealthCareandCosts@77cd7a0]" name="tearDown" is-config="true" duration-ms="2314" started-at="2017-04-12T15:06:51Z" finished-at="2017-04-12T15:06:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- remedy.health.HealthCareandCosts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

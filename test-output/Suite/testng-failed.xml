@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="remedy.health.SharedControls">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="TestSharedControls"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.SharedControls -->
+      <class name="remedy.health.HealthCareandCosts">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.HealthCareandCosts -->
+      <class name="remedy.health.Tag">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.Tag -->
+      <class name="remedy.health.Author">
+        <methods>
+          <include name="Test_Author"/>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.Author -->
+      <class name="remedy.health.Bookstore">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="CheckBookstore"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.Bookstore -->
+      <class name="remedy.health.AboutUs">
+        <methods>
+          <include name="CheckAboutUs"/>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.AboutUs -->
+      <class name="remedy.health.DrugsandSupplements">
+        <methods>
+          <include name="TestDrugsandSpplements"/>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.DrugsandSupplements -->
+      <class name="remedy.health.SearchEngineOptimization">
+        <methods>
+          <include name="TestSearchEngine"/>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.SearchEngineOptimization -->
+      <class name="remedy.health.SexandRelationships">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.SexandRelationships -->
+      <class name="remedy.health.FoodandFitness">
+        <methods>
+          <include name="TestFoodandFitness"/>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.FoodandFitness -->
+      <class name="remedy.health.ArticlePage">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.ArticlePage -->
+      <class name="remedy.health.MainPage">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- remedy.health.MainPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
